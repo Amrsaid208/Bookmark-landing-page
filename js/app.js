@@ -198,3 +198,16 @@ const scrlt=document.querySelector('.scroll-top');
 scrlt.onclick=function(){
     scrollTo(0,0);
 }
+var timer = null;
+window.addEventListener('scroll', function() {
+   if(timer !== null ) {
+    clearTimeout(timer);      
+    nav.classList.remove('hide')  ;
+}
+    timer = setTimeout(function() {
+        if(document.documentElement.scrollTop>200){
+            nav.classList.add('hide'); 
+           }
+          
+    }, 250);
+}, false);
