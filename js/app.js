@@ -115,16 +115,16 @@ const faqq=document.querySelector('.q');
 // desktob nav
 document.querySelector('.fet').onclick=function(){
     'use strict';
-    window.scrollTo(0,800);
+    window.scrollTo(0,580);
 }
 
 down.addEventListener('click',function(){
 
-window.scrollTo(0,1800)
+window.scrollTo(0,1250)
 });
 faq.addEventListener('click',function(){
 
-window.scrollTo(0,3000)
+window.scrollTo(0,2000)
 });
 //mob nav
 document.querySelector('.fet-m').onclick=function(){
@@ -166,12 +166,12 @@ bot.classList.toggle('rotate2');
 window.onscroll=function() {scrollf()}
 
 function scrollf(){
-    if(document.body.scrollTop>500 || document.documentElement.scrollTop>500){
+    if(document.body.scrollTop>400 || document.documentElement.scrollTop>400){
         scrlt.classList.remove('hide')
     }
     else         scrlt.classList.add('hide')
 
-    if((document.body.scrollTop>800)  || document.documentElement.scrollTop>800){
+    if((document.body.scrollTop>550)  || document.documentElement.scrollTop>550){
         fet.classList.add('marked');
         faq.classList.remove('marked');
         down.classList.remove('marked');    
@@ -181,12 +181,12 @@ function scrollf(){
         fet.classList.remove('marked');
 
     }
-    if((document.body.scrollTop>1750)  || document.documentElement.scrollTop>1750){
+    if((document.body.scrollTop>1200)  || document.documentElement.scrollTop>1200){
         fet.classList.remove('marked');
         down.classList.add('marked');
         faq.classList.remove('marked');
     }
-    if((document.body.scrollTop>2700)  || document.documentElement.scrollTop>2700){
+    if((document.body.scrollTop>1950)  || document.documentElement.scrollTop>1950){
         fet.classList.remove('marked');
         down.classList.remove('marked');
         faq.classList.add('marked');  
